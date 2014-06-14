@@ -8,3 +8,4 @@ def blog(request):
 def billet(request,billet_id):
     billet = Billet.objects.get(pk=billet_id)
     return render_to_response('blog/billet.html', {'billet' : billet})#, context_instance=RequestContext(request))
+    
