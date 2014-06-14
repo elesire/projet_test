@@ -1,0 +1,10 @@
+{% extends "blog/base.html" %}
+
+{% block body %}
+    <div class="container">
+        <span class="photo"><img src="{{ MEDIA_URL }}{{ billet.photo }}" /></span>
+        <span class="description">{{ billet.description }}</span>
+        <span class="strong"><a href="">{{ billet.name }}</a></span>
+        <span class="nav"><a href="/blog/{{ billet.id }}">show</a></span>
+    </div>
+{% endblock %}
