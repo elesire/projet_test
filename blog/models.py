@@ -6,3 +6,4 @@ class Billet(models.Model):
     name = models.CharField(max_length=255)
     description = models.TextField()
     photo = models.ImageField(upload_to="photos/")
+    
